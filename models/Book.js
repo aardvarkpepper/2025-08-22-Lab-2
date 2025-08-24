@@ -6,9 +6,9 @@ const bookSchema = new Schema({
     type: String,
     required: [true, 'Title is required.']
   },
-  email: {
+  author: {
     type: String,
-    required: [true, 'Email is required.']
+    required: [true, 'Author is required.']
   },
   isbn: {
     type: mongoose.Schema.Types.ObjectId,
