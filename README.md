@@ -67,3 +67,9 @@ Postman requires 'raw' with JSON to pass req.body (not req.book), with double qu
   }
 
   Postman also requires a res to be sent; simply sending a console.log does not 'resolve', so the connection hangs.
+
+  ## REFERENCES
+
+  Used a lot of code from lessons, possibly some old code as examples including from code I wrote during class activities, some websites like
+
+  https://mongoosejs.com/docs/models.html
