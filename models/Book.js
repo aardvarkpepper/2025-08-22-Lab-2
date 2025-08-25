@@ -11,7 +11,7 @@ const bookSchema = new Schema({
     required: [true, 'Author is required.']
   },
   isbn: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: String,
     unique: true
   },
   publishedDate: Date,

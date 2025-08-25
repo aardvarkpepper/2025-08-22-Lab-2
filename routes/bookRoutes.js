@@ -2,21 +2,15 @@ const express = require('express');
 const router = express.Router();
 const bookController = require('../controllers/bookController');
 
-router.post('/', (req, res) => {
-  res.send('Create a new user');
-});
+router.post('/', bookController.createBook);
 
-router.get('/', (req, res) => {
-  res.send('Get all users');
-});
+router.get('/', bookController.getAllBooks);
 
-router.get('/:id', (req, res) => {});
+router.get('/:id', bookController.getBook);
 
-router.put('/:id', (req, res) => {});
+router.put('/:id', bookController.updateBook);
 
-router.delete('/:id', (req, res) => {});
- 
-
+router.delete('/:id', bookController.deleteBook);
  
 module.exports = router;
 
